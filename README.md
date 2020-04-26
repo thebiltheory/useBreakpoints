@@ -2,7 +2,7 @@
 
 > React Hook to map value/breakpoint the styled-component way.
 
-[![NPM](https://img.shields.io/npm/v/usebreakpoints.svg)](https://www.npmjs.com/package/usebreakpoints) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![CircleCI](https://circleci.com/gh/thebiltheory/useBreakpoints/tree/master.svg?style=svg)](https://circleci.com/gh/thebiltheory/useBreakpoints/tree/master) [![NPM](https://img.shields.io/npm/v/usebreakpoints.svg)](https://www.npmjs.com/package/@thebiltheory/usebreakpoints) ![npm](https://img.shields.io/npm/v/@thebiltheory/usebreakpoints?color=%236820FE) ![npm](https://img.shields.io/npm/dm/@thebiltheory/usebreakpoints)
 
 ## Example/ Demo
 
