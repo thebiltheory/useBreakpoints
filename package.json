@@ -1,5 +1,5 @@
 {
-  "name": "usebreakpoints",
+  "name": "@thebiltheory/usebreakpoints",
   "version": "0.0.0-development",
   "description": "React hook for have a styled-component ish way of setting values",
   "author": "TheBilTheory",
