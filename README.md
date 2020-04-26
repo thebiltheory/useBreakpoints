@@ -1,4 +1,4 @@
-# usebreakpoints
+# useBreakpoints
 
 > React hook for have a styled-component ish way of setting values
 
@@ -10,19 +10,19 @@
 npm install --save usebreakpoints
 ```
 
+or
+
+```bash
+yarn add usebreakpoints
+```
+
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
-
-import MyComponent from 'usebreakpoints'
-import 'usebreakpoints/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+const [componentId, currentBreakpoint] = useBreakpoints(
+  ['sad', 'neutral', 'happy', 'rocket'],
+  [576, 768, 992, 1200]
+)
 ```
 
 ## License
