@@ -14,7 +14,7 @@ jobs:
                 command: yarn install
             - run:
                 name: 🧹 Linting
-                command: yarn test:linting
+                command: yarn test:lint
             - run:
                 name: 🧪 Testing
                 command: yarn test
