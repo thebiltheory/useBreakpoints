@@ -1,7 +1,7 @@
 {
   "name": "@thebiltheory/usebreakpoints",
   "version": "0.0.0-development",
-  "description": "React hook for have a styled-component ish way of setting values",
+  "description": "React Hook to map value/breakpoint the styled-component way.",
   "author": "TheBilTheory",
   "license": "MIT",
   "repository": "TheBilTheory/usebreakpoints",
