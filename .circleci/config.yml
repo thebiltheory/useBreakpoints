@@ -15,8 +15,7 @@ workflows:
     build-and-test:
       jobs:
         - build-and-testversion: 2.1
-orbs:
-  node: circleci/node@1.1.6
+
 jobs:
   build-and-test:
     executor:
