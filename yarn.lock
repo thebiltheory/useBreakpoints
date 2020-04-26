@@ -1430,6 +1430,11 @@
     lodash "^4.17.4"
     micromatch "^4.0.2"
 
+"@semantic-release/error@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-2.1.0.tgz#44771f676f5b148da309111285a97901aa95a6e0"
+  integrity sha512-r3pcw7lhzoSalM55O7L8R3gNq8AnZ7OS7RReHqJDTIuyRaQbtfZ+9S8Krvh/BSnTMYYhs4TgZctb6pOamegUtQ==
+
 "@semantic-release/error@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-2.2.0.tgz#ee9d5a09c9969eade1ec864776aeda5c5cddbbf0"
@@ -3562,6 +3567,16 @@ concat-with-sourcemaps@^1.1.0:
   dependencies:
     source-map "^0.6.1"
 
+condition-circle@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/condition-circle/-/condition-circle-2.0.2.tgz#1eda973569b2de24eff11179f228e7eadde80506"
+  integrity sha512-lX/6YGbAIFrxxI00y4ZfQYoF1dYSLwcu6Lk7lnnfxiIs/yS4/GBkS5rRxktivU444bRXaFBeVt/JM9sL9fX9SA==
+  dependencies:
+    "@semantic-release/error" "2.1.0"
+    cross-spawn "5.1.0"
+    debug "3.1.0"
+    safe-env "1.2.0"
+
 config-chain@^1.1.12:
   version "1.1.12"
   resolved "https://registry.yarnpkg.com/config-chain/-/config-chain-1.1.12.tgz#0fde8d091200eb5e808caf25fe618c02f48e4efa"
@@ -3802,6 +3817,15 @@ cross-env@^7.0.2:
   dependencies:
     cross-spawn "^7.0.1"
 
+cross-spawn@5.1.0, cross-spawn@^5.0.1:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
+  integrity sha1-6L0O/uWPz/b4+UUQoKVUu/ojVEk=
+  dependencies:
+    lru-cache "^4.0.1"
+    shebang-command "^1.2.0"
+    which "^1.2.9"
+
 cross-spawn@7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.1.tgz#0ab56286e0f7c24e153d04cc2aa027e43a9a5d14"
@@ -3810,15 +3834,6 @@ cross-spawn@7.0.1:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
-
-cross-spawn@^5.0.1:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
-  integrity sha1-6L0O/uWPz/b4+UUQoKVUu/ojVEk=
-  dependencies:
-    lru-cache "^4.0.1"
-    shebang-command "^1.2.0"
-    which "^1.2.9"
 
 cross-spawn@^6.0.0, cross-spawn@^6.0.5:
   version "6.0.5"
@@ -11043,6 +11058,11 @@ raf@^3.4.1:
   dependencies:
     performance-now "^2.1.0"
 
+ramda@0.22.1:
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.22.1.tgz#031da0c3df417c5b33c96234757eb37033f36a0e"
+  integrity sha1-Ax2gw99BfFszyWI0dX6zcDPzag4=
+
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
@@ -11909,6 +11929,13 @@ safe-buffer@>=5.1.0, safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1,
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.0.tgz#b74daec49b1148f88c64b68d49b1e815c1f2f519"
   integrity sha512-fZEwUGbVl7kouZs1jCdMLdt95hdIv0ZeHg6L7qPeciMZhZ+/gdesW4wgTARkrFWEpspjEATAzUGPG8N2jJiwbg==
+
+safe-env@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/safe-env/-/safe-env-1.2.0.tgz#d5b65e0f147e7b7edd5593b9e1fd4bd710e0254f"
+  integrity sha1-1bZeDxR+e37dVZO54f1L1xDgJU8=
+  dependencies:
+    ramda "0.22.1"
 
 safe-identifier@^0.4.1:
   version "0.4.1"
