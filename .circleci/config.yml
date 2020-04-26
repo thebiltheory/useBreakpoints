@@ -9,29 +9,14 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
-            - run: npm install
-            - run: npm test
-workflows:
-    build-and-test:
-      jobs:
-        - build-and-testversion: 2.1
-
-jobs:
-  build-and-test:
-    executor:
-      name: node/default
-    steps:
-      - checkout
-      - node/with-cache:
-          steps:
             - run:
-                name:  📦 Install packages
+                name: 📦 Install packages
                 command: yarn install
             - run:
-                name:  🧹 Linting
-                command: yarn test:lint
+                name: 🧹 Linting
+                command: yarn test:linting
             - run:
-                name:  🧪 Testing
+                name: 🧪 Testing
                 command: yarn test
   publish:
     executor:
@@ -39,22 +24,22 @@ jobs:
     steps:
       - checkout
       - run:
-          name:  📦 Install packages
+          name: 📦 Install packages
           command: yarn install
       - run:
-          name:  🚧 Building
+          name: 🚧 Building
           command: yarn build
       - run:
           name: 🚀 Publish to Github Package
           command: yarn semantic-release || true
 
 workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
-        - publish:
-            requires:
-              - build-and-test
-            filters:
-              branches:
-                only: master
+  build-and-test:
+    jobs:
+      - build-and-test
+      - publish:
+          requires:
+            - build-and-test
+          filters:
+            branches:
+              only: master

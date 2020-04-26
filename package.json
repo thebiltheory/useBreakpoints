@@ -21,12 +21,15 @@
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "semantic-release": "semantic-release"
   },
   "peerDependencies": {
     "react": "^16.0.0"
   },
   "devDependencies": {
+    "@semantic-release/github": "^7.0.5",
+    "semantic-release": "^17.0.7",
     "@types/jest": "^25.1.4",
     "@types/react": "^16.9.27",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
@@ -62,9 +65,5 @@
   "release": {
     "branch": "master",
     "verifyConditions": "condition-circle"
-  },
-  "dependencies": {
-    "@semantic-release/github": "^7.0.5",
-    "semantic-release": "^17.0.7"
   }
 }
