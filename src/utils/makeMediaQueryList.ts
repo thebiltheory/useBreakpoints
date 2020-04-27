@@ -1,4 +1,4 @@
-export default function getMediaQueriyList(breakpoints: number[]) {
+export default function makeMediaQueryList(breakpoints: number[]) {
   return breakpoints.map((breakpoint: number, index: number) => {
     const maxWidth = breakpoints[index + 1]
     return window.matchMedia(

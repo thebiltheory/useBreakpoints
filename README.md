@@ -1,8 +1,8 @@
 # useBreakpoints
 
-> React Hook to map value/breakpoint the styled-component way.
-
 [![CircleCI](https://circleci.com/gh/thebiltheory/useBreakpoints/tree/master.svg?style=svg)](https://circleci.com/gh/thebiltheory/useBreakpoints/tree/master) [![NPM](https://img.shields.io/npm/v/usebreakpoints.svg)](https://www.npmjs.com/package/@thebiltheory/usebreakpoints) ![npm](https://img.shields.io/npm/v/@thebiltheory/usebreakpoints?color=%236820FE) ![npm](https://img.shields.io/npm/dm/@thebiltheory/usebreakpoints)
+
+React Hook to map value/breakpoint the styled-component way.
 
 ## Example/ Demo
 
@@ -24,13 +24,19 @@ yarn add @thebiltheory/usebreakpoints
 
 ```tsx
 const [value, currentBreakpoint] = useBreakpoints(
-  ['sad', 'neutral', 'happy', 'rocket'],
-  [576, 768, 992, 1200]
+  ['mobile', 'tablet', 'desktop', 'huge screen'],
+  [576, 768, 992, 1600]
 )
 
 const [value, currentBreakpoint] = useBreakpoints(
   [1, 2, 3, 4],
   [576, 768, 992, 1200]
+)
+
+import theme from 'src/theme'
+const [value, currentBreakpoint] = useBreakpoints(
+  [1, 2, 3, 4],
+  theme.breakpoints
 )
 ```
 
