@@ -4,11 +4,18 @@ import useBreakpoints from 'usebreakpoints'
 const App = () => {
   const breakpoints = [576, 768, 992, 1200]
 
+  const stringBreakpoints = ['576px', '768px', '992px', '1200px']
+
   const [value, breakpoint] = useBreakpoints([1, 2, 3, 4], breakpoints)
 
   const [componentId] = useBreakpoints(
     ['sad', 'neutral', 'happy', 'rocket'],
     breakpoints
+  )
+
+  const [mood] = useBreakpoints(
+    ['sad', 'neutral', 'happy', 'rocket'],
+    stringBreakpoints
   )
 
   const list = {
@@ -64,6 +71,7 @@ const App = () => {
           useBreakpoints
         </h1>
         <h3>{breakpoint}px</h3>
+        I'm in a {mood} mood
         <div
           style={{
             fontSize: 'clamp(5em, 5em + 8vw, 10em)',
