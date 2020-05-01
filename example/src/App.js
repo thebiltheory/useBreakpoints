@@ -4,7 +4,7 @@ import useBreakpoints from 'usebreakpoints'
 const App = () => {
   const breakpoints = [576, 768, 992, 1200]
 
-  const stringBreakpoints = ['576px', '768px', '992px', '1200px']
+  const stringBreakpoints = ['576px', '768lol', '992px', '1200px']
 
   const [value, breakpoint] = useBreakpoints([1, 2, 3, 4], breakpoints)
 

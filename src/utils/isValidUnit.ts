@@ -19,9 +19,7 @@ export default function isValidUnit(breakpoint: string) {
   const unit: string[] = breakpoint.match(/(\D+)/g) || ['']
 
   if (!units.includes(unit[0])) {
-    throw new Error(
-      `"${breakpoint.match(/[^0-9]+/g)}" is not a valid CSS unit.`
-    )
+    throw new Error(`"${unit}" is not a valid CSS unit.`)
   }
 
   return true
