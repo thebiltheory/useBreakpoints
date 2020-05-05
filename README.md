@@ -30,7 +30,7 @@ const [value, currentBreakpoint] = useBreakpoints(
 
 const [value, currentBreakpoint] = useBreakpoints(
   [1, 2, 3, 4],
-  [576, 768, 992, 1200]
+  ['576px', '768px', '992px', '1200px']
 )
 
 import theme from 'src/theme'
