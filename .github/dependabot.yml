@@ -1,0 +1,33 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@testing-library/react-hooks"
+    versions:
+    - 5.0.3
+    - 5.1.0
+    - 5.1.1
+  - dependency-name: "@types/jest"
+    versions:
+    - 26.0.20
+    - 26.0.21
+    - 26.0.22
+  - dependency-name: npm
+    versions:
+    - 6.14.11
+    - 6.14.12
+  - dependency-name: eslint-plugin-react
+    versions:
+    - 7.22.0
+    - 7.23.1
+  - dependency-name: "@semantic-release/github"
+    versions:
+    - 7.2.0
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
